@@ -1,0 +1,70 @@
+name: DeadAndInjure
+description: Fun and thrilling multiplayer game.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^4.0.4
+  flutter_native_splash: ^2.2.19
+  get: ^4.6.5
+  url_launcher: ^6.1.11
+  image_picker: ^0.8.7+5
+  carousel_slider: ^4.2.1
+  grouped_list: ^5.1.2
+  intl: ^0.18.1
+  chat_bubbles: ^1.4.1
+  provider: ^6.0.5
+  logger: ^2.0.2+1
+  font_awesome_flutter: ^10.4.0
+  intl_phone_field: ^3.1.0
+  email_validator: ^2.1.17
+  shared_preferences: ^2.1.2
+  flutter_screenutil: ^5.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+
+flutter_native_splash:
+  color: " #3a243b "
+  color_dark: " #3a243b "
+  image: asset/images/di_icon.png
+  image_dark: asset/images/di_icon.png
+
+  android_12:
+    image: asset/images/di_icon.png
+    icon_background_color: " #3a243b "
+    image_dark: asset/images/di_icon.png
+    icon_background_color_dark: " #3a243b "
+  flutter_lints: ^2.0.0
+
+  android: true
+  ios: true
+  web: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - "asset/images/"
+
+
+
+flutter_icons:
+  android: true
+  ios: true
+  web: true
+  image_path_android: "asset/images/di_icon.png"
+  image_path_ios: "asset/images/di_icon.png"
+
+
+
