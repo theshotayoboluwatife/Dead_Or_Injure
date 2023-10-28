@@ -1,7 +1,8 @@
 import 'package:DeadAndInjure/src/presentation/screens/signin_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'home_screen.dart';
+import '../widgets/custom_text.dart';
+import 'home/home_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
   static const String routeName = '/signup';
@@ -138,9 +139,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text(
-                          "Sign Up",
-                          style: TextStyle(color: Colors.black),
+                        CustomText(
+                          text: "Sign Up",
+                          color: Colors.black,
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 8, bottom: 8),
@@ -169,17 +170,17 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 Row(
                   children: [
-                    Text(
-                      "Already a player?",
-                      style: TextStyle(color: Colors.white),
+                    CustomText(
+                      text: "Already a Player?",
+                      color: Colors.white,
                     ),
                     TextButton(
                       onPressed: () {
                         Navigator.pushNamed(context, SignInScreen.routeName);
                       },
-                      child: Text(
-                        "Log in",
-                        style: TextStyle(color: Colors.blue[300]),
+                      child:  CustomText(
+                        text: "Login",
+                        color: Colors.blue[300],
                       ),
                     ),
                   ],

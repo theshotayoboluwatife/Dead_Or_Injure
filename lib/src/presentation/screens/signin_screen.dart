@@ -1,7 +1,9 @@
+import 'package:DeadAndInjure/src/presentation/screens/home/landing_screen.dart';
 import 'package:DeadAndInjure/src/presentation/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'home_screen.dart';
+import '../widgets/custom_text.dart';
+import 'home/home_screen.dart';
 
 class SignInScreen extends StatefulWidget {
   static const String routeName = '/signin';
@@ -99,12 +101,15 @@ class _SignInScreenState extends State<SignInScreen> {
                   padding: EdgeInsets.only(left: 30,right:30),
                   child: ElevatedButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, HomeScreen.routeName);
+                        Navigator.pushNamed(context, LandingScreen.routeName);
                       },
                       child: Row(
                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text("Log in", style: TextStyle(color: Colors.black),),
+                        CustomText(
+                          text: "Log in",
+                          color: Colors.black,
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(top: 8, bottom: 8),
                           child: Container(
@@ -129,11 +134,17 @@ class _SignInScreenState extends State<SignInScreen> {
                   ) ,),
                 ),
                 const SizedBox(height: 30,),
-                TextButton(onPressed: (){}, child: Text("Forget Password?", style: TextStyle(color: Colors.blue[300]),)),
+                TextButton(onPressed: (){}, child:  CustomText(
+                  text: "Forget Password?",
+                  color: Colors.blue[300],
+                ),),
                 SizedBox(height: size.height * 0.1,),
                 Row(
                   children: [
-                    Text("New player?", style: TextStyle(color: Colors.white),) ,
+                    CustomText(
+                      text: "New Player?",
+                      color: Colors.white,
+                    ),
                     TextButton(onPressed: () {Navigator.pushNamed(context, SignUpScreen.routeName);}, child: Text("Sign up", style: TextStyle(color: Colors.blue[300]),),) ,
                   ],
                 )

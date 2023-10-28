@@ -1,4 +1,4 @@
-import 'package:DeadAndInjure/src/presentation/screens/home_screen.dart';
+import 'package:DeadAndInjure/src/presentation/screens/home/home_screen.dart';
 import 'package:DeadAndInjure/src/presentation/screens/signin_screen.dart';
 import 'package:DeadAndInjure/src/presentation/screens/signup_screen.dart';
 import 'package:DeadAndInjure/src/themes/theme.dart';
